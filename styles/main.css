@@ -89,3 +89,11 @@ div.innerLoginBox {
 	width: 97%;
 	float: left;
 }
+h2 {
+	font-size: 40px;
+}
+.phosphorus-placeholder {
+	width: 482px;
+	height: 393px;
+	background-color: #AA0000;
+}
