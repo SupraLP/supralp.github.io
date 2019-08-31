@@ -5,6 +5,54 @@ body {
 	font-family:sans-serif;
 	font-size:120%;
 }
+input[type=button], input[type=submit] {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #4B4B4B;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 4px;
+}
+input[type=button]:hover, input[type=submit]:hover {
+	background-color: #DDDDDD;
+}
+input[type=button]:active, input[type=submit]:active {
+	background-color: #00FFFF;
+}
+input[type=button]:target, input[type=submit]:target {
+	background-color: #00FFFF;
+}
+input[type=text], input[type=password] {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #4B4B4B;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 4px;
+	box-sizing: border-box;
+}
+#connectedLeft {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin-right: -3px;
+}
+#connectedRight {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	margin-left: -3px;
+}
+#connectedCenter {
+	border-radius: 0px;
+	margin-right: -4px;
+	margin-left: -3px;
+}
+.loginInput {
+	width: 100%;
+}
+div.innerLoginBox {
+	min-width: 200px;
+	text-align: center;
+}
 .page-title {
     color:#FFFFFF;
 	text-align: center;
