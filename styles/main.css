@@ -6,7 +6,7 @@ body {
 	font-size:120%;
 }
 
-input {
+input, button {
 	background-color: #444444;
 	color: #FFFFFF;
 	border-style: solid;
