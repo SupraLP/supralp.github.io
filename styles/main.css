@@ -17,7 +17,7 @@ input {
 	margin: 4px;
 }
 input[type=button]:hover, input[type=submit]:hover, button:hover {
-	background-color: #DDDDDD;
+	background-color: #333333;
 }
 input[type=button]:active, input[type=submit]:active, button:active {
 	background-color: #00FFFF;
