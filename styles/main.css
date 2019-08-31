@@ -95,3 +95,6 @@ h2 {
 	height: 400px;
 	background-color: #AA0000;
 }
+.project-page section {
+	display: table-row;
+}
