@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta  content="text/html; charset=windows-1252"  http-equiv="content-type">
+    <title> Supra© GameCenter </title>
+    <!--?berschrift-->
+  </head>
+  <body>
+    <h1> <img  style="width: 196px; height: 100px;"  src="Supra%20logo%20light1.jpg"
+
+         title="Supra© Logo"> </h1>
+    <h1> </h1>
+    <form  target="suchergebnisse"  action="ergebnisse.html"> <input  name="q"
+
+         value=""> <button>Suchen</button>
+      <h1  style="text-align: right;"> <iframe  name="suchergebnisse"  height="70%"
+
+           width="80%"> &amp;amp;amp;lt;/p&amp;amp;amp;gt;</iframe></h1>
+    </form>
+  </body>
+</html>

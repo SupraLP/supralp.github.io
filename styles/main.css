@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body {
+    background-color: #1B1B1B;
+	font-weight:bold;
+	font-family:sans-serif;
+	font-size:120%;
+}
+.page-title {
+    color:#FFFFFF;
+	text-align: center;
+    bottom: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 3px #808080;
+    line-height: 100px;
+    margin-top: 100px;
+}
+
+.dunkelgraubox {
+    color: white;
+    background-color:#333;
+    padding:6px;
+    margin:6px;
+    border:none;
+    min-width:600px;
+}
+
+.dunkelgrauboxFloat {
+    color: white;
+	background-color:#333;
+	padding:6px;
+	margin: 20px;
+	float:left;
+}
+
+.dunkelgrauboxFloatLR {
+    color: white;
+	background-color:#333;
+	padding: 6px;
+	margin: 20px;
+	width: 97%;
+	float: left;
+}

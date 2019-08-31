@@ -1,0 +1,23 @@
+.imageFrame {
+	width: 450px;
+	margin: 20px;
+	float:left;
+}
+.centeredImage {
+	height: 450px;
+	width: 450px;
+	background: rgba(0,0,0,0.3);
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.centeredImage img {
+	margin: auto;
+	width: 450px;
+}
+.imageDescription {
+	background: rgba(0,0,0,0.3);
+	margin-top: 5px;
+	padding: 5px;
+}

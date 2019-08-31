@@ -1,0 +1,12 @@
+a:link {
+	color: #00FFFF;
+    text-decoration: none;
+}
+a:not(li) {
+	color: #008888;
+    text-decoration: none;
+}
+a:hover {
+	color: #00BBBB;
+    text-decoration: underline;
+}
