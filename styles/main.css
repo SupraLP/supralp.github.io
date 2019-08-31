@@ -64,8 +64,8 @@ div.innerLoginBox {
 .dunkelgraubox {
     color: white;
     background-color:#333;
-    padding:6px;
-    margin:6px;
+    padding:5px;
+    margin:5px;
     border:none;
     min-width:600px;
 }
@@ -73,16 +73,16 @@ div.innerLoginBox {
 .dunkelgrauboxFloat {
     color: white;
 	background-color:#333;
-	padding:6px;
-	margin: 20px;
+	padding:5px;
+	margin: 5px;
 	float:left;
 }
 
 .dunkelgrauboxFloatLR {
     color: white;
 	background-color:#333;
-	padding: 6px;
-	margin: 20px;
+	padding: 5px;
+	margin: 5px;
 	width: 97%;
 	float: left;
 }
@@ -97,4 +97,29 @@ h2 {
 }
 .project-page section {
 	display: table-row;
+}
+.content {
+	margin-left: 10%;
+	margin-right: 10%;
+	bottom: 140px;
+}
+footer {
+    position: fixed;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    background-color: #222222;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+	height: 100px;
+}
+.footerLeft {
+    margin-left: 10%;
+    float: left;
+}
+.footerRight {
+    margin-right: 10%;
+    float: right;
 }

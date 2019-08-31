@@ -1,3 +1,3 @@
 # Supra website
 
-just my website, where i host my projects and products.
+just my website, where I host my projects and products.
