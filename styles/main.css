@@ -5,7 +5,15 @@ body {
 	font-family:sans-serif;
 	font-size:120%;
 }
-
+.rowcontainer {
+	display: table;
+}
+.rowcontainer > * {
+	display: table-row;
+}
+.rowcontainer > * > p {
+	margin: 5px;
+}
 input, button {
 	background-color: #444444;
 	color: #FFFFFF;
@@ -58,7 +66,6 @@ div.innerLoginBox {
     font-size: 60px;
     text-shadow: 2px 2px 3px #808080;
     line-height: 100px;
-    margin-top: 100px;
 }
 
 .dunkelgraubox {
@@ -95,14 +102,11 @@ h2 {
 	height: 400px;
 	background-color: #AA0000;
 }
-.rowcontainer section {
-	display: table-row;
-	width: inherit;
-}
 .content {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 140px;
+    margin-top: 100px;
 }
 footer {
     position: fixed;
