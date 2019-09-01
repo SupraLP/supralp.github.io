@@ -129,3 +129,7 @@ footer {
     margin-right: 10%;
     float: right;
 }
+.projectContainer > * {
+	min-height: 425px;
+	width: 482px;
+}
