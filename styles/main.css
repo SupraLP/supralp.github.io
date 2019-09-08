@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 body {
-    background-color: #1B1B1B;
+	background-image: linear-gradient(to bottom right, #00FFFF, #BB00FF);
+    /*background-image: url("rcs/HQ-fancy-noise.png");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-color: #1B1B1B99;
 	font-weight:bold;
 	font-family:sans-serif;
 	font-size:120%;
