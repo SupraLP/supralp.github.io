@@ -106,6 +106,7 @@ h2 {
 	width: 482px;
 	height: 400px;
 	background-color: #AA0000;
+	overflow: hidden;
 }
 .content {
 	margin-left: 10%;
