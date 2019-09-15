@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/impressum.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/centeredImage.css">
+		<script src="main.js" charset="utf-8"></script>
 		<title>Projects - Supra</title>
 	</head>
 	<body>
@@ -57,7 +58,7 @@
 				<div class="projectContainer">
 					<div class="dunkelgrauboxFloat">
 						OpenHouseExplorer, no Download link<br>
-						<iframe src="WebGLApplications/OpenHouseExplorer/embed.html" width="482px" height="400" scrolling="no" style="border: none;">There is no browser script for this project right now.</iframe>
+						<div class="phosphorus-placeholder" id="OpenHouseExplorer"><button onclick="loadWebInteractivePlayer('ohe')">load Unity WebGL Player</button></div>
 					</div>
 
 				</div>
@@ -106,11 +107,11 @@
 				<div class="projectContainer">
 					<div class="dunkelgrauboxFloat">
 						Download: <a href="scratch/2D.sb2">Main Game</a><br>
-						<script src=https://phosphorus.github.io/embed.js?id=108472459&auto-start=false&light-content=false></script>
+						<div class="phosphorus-placeholder" id="maingame"><button onclick="loadWebInteractivePlayer('Main Game')">load phosphorus Player</button></div>
 					</div>
 					<div class="dunkelgrauboxFloat">
 						Download: <a href="scratch/insel.sb2">Insel</a><br>
-						<script src=https://phosphorus.github.io/embed.js?id=108521809&auto-start=false&light-content=false></script><br>
+						<div class="phosphorus-placeholder" id="island"><button onclick="loadWebInteractivePlayer('island')">load phosphorus Player</button></div>
 					</div>
 					<div class="dunkelgrauboxFloat">
 						Download: <a href="scratch/fruechte.sb2">Fr&uuml;chte</a>
