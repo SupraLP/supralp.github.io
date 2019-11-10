@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>LavenderUI customizer</title>
+		<link rel="shortcut icon" href="../index.ico"/>
+        <link rel="stylesheet" href="styles/links.css">
+		<link rel="stylesheet" href="styles/menu.css">
+        <link rel="stylesheet" href="styles/impressum.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/centeredImage.css">
+		<style media="screen">
+			html {
+				font-family: sans-serif;
+				/* general text color */
+				--textColor: #FFFFFF;
+
+				/* colors for a active menu element (e.g. menu point for content menu) */
+				--activeBGcolor: #200042; /* background */
+				--activeFGcolor: #FFFFFF; /* foreground */
+
+				/* buttons (<button> aswell as <input>[button] and <input>[submit]) */
+				--buttonBGColor: #100021; /* background */
+				--buttonBGColorActive: #17002D; /* background */
+				--buttonBGColorHover: #17002D; /* background */
+				--buttonFGColor: var(--textColor); /* foreground */
+
+				/* focused element. Things like <input> */
+				--focusedElementBackgroundColor: #3f1154;
+				--focusedElementColor: var(--textColor);
+
+				/* general UI colors */
+				--backgroundColor: #100021F7; /* background */
+				--borderColor: #26004cF9; /* border */
+				--borderColorSec: #0c0019; /* secondary border (buttons and elements inside the main UI) */
+				--inputBackgroundColor: #270935;
+
+				/************************************
+				***********single elements***********
+				************************************/
+
+				--menuButtonBackground: var(--backgroundColor);
+				--menuButtonBorder: var(--borderColor);
+				--menuButtonText: var(--textColor);
+
+				--inputBackground: var(--inputBackgroundColor);
+				--inputBorder: var(--borderColorSec);
+				--inputText: var(--buttonFGColor);
+
+				--buttonBackground: var(--buttonBGColor);
+				--buttonBorder: var(--borderColorSec);
+				--buttonText: var(--buttonFGColor);
+
+				--avatarCardBackground: var(--buttonBGColor);
+				--avatarCardBorder: var(--borderColorSec);
+				--avatarCardText: var(--textColor);
+
+				--loginPanelTint: var(--backgroundColor);
+
+
+
+				--border-radius-outside: 0;
+				--border-radius-medium: 0;
+				--border-radius-inside: 0;
+
+				color: var(--textColor);
+				--border-width: 0px;
+				background-color: var(--backgroundColor);
+			}
+
+			.content {
+				padding: 8px;
+				margin-bottom: 0;
+				color: var(--textColor);
+				background-color: var(--backgroundColor) !important;
+				border-style: solid;
+				border-width: var(--border-width);
+				border-color: var(--borderColor);
+				font: 16px bold;
+				border-radius: var(--border-radius-outside);
+				font-size: 2rem;
+			}
+
+			.textinput, #button {
+				min-height:64px;
+				padding: 12px 20px;
+				background-color: var(--inputBackground);
+				border-style: solid;
+				border-width: var(--border-width);
+				border-color: var(--inputBorder);
+				border-radius: var(--border-radius-inside);
+				text-align: left;
+				font-size: 1em;
+				color: var(--inputText);
+				box-sizing: border-box;
+			}
+			.textinput:focus {
+				background-color: var(--focusedElementBackgroundColor);
+				color: var(--focusedElementColor);
+			}
+			#button {
+				height: 64px;
+				background-color: var(--buttonBGColor);
+				border-style: solid;
+				border-width: var(--border-width);
+				border-color: var(--buttonBorder);
+				border-radius: var(--border-radius-inside);
+				text-align: center;
+				font-size: 2rem;
+				color: var(--buttonFGColor);
+				padding: 13px 20px;
+				box-sizing: border-box;
+			}
+			#button:hover, .textinput:hover {
+				background-color: var(--buttonBGColorHover);
+			}
+			#button:active {
+				background-color: var(--buttonBGColorActive);
+			}
+			h1 {
+				text-align: center;
+			}
+
+		</style>
+		<script type="text/javascript">
+			function updateElements(key, value) {
+				console.log(key, value);
+				switch(key) {
+					case "border-width":
+						applyStyle(key, value, document.getElementById("button"));
+						applyStyle(key, value, document.getElementById("content"));
+						applyStyle(key, value, document.getElementById("textarea"));
+					case "border-radius-large":
+						applyStyle("border-radius", value, document.getElementById("content"));
+					case "border-radius-medium":
+						applyStyle("border-radius", value, document.getElementById("button"));
+						applyStyle("border-radius", value, document.getElementById("textarea"));
+				}
+
+			}
+			function applyStyle(key, value, element) {
+				element.style.key = value;
+			}
+		</script>
+	</head>
+	<body style="width: 70%; margin: 20px auto;">
+		<fieldset name="General">
+			<h1>General</h1>
+			<table style="border: none; width: 100%;">
+				<colgroup>
+					<col style="width: 25%; text-align: left;">
+					<col style="width: 25%; text-align: left;">
+					<col style="width: 50%;">
+				</colgroup>
+				<tr>
+					<th>Border width:</th>
+					<th><input type="range" min="0" max="100" name="" value="0" onchange="updateElements('border-width', value)"></th>
+					<th rowspan="4"><button id="button" type="button" name="button">Button</button></th>
+				</tr>
+				<tr>
+					<th>Border rounding-large:</th>
+					<th><input type="range" min="0" max="100" name="" value="0"></th>
+				</tr>
+				<tr>
+					<th>Border rounding-medium:</th>
+					<th><input type="range" min="0" max="100" name="" value="0"></th>
+				</tr>
+				<tr>
+					<th>Border rounding-small:</th>
+					<th><input type="range" min="0" max="100" name="" value="0"></th>
+				</tr>
+			</table>
+		</fieldset>
+	</body>
+</html>
