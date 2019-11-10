@@ -72,28 +72,31 @@ div.innerLoginBox {
     line-height: 100px;
 }
 
+.box {
+    color: white;
+    background-color:#00000044;
+    padding:10px;
+    margin:5px;
+    border:none;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
 .dunkelgraubox {
     color: white;
-    background-color:#333;
-    padding:5px;
-    margin:5px;
     border:none;
     min-width:600px;
 }
 
 .dunkelgrauboxFloat {
     color: white;
-	background-color:#333;
-	padding:5px;
-	margin: 5px;
 	float:left;
 }
 
 .dunkelgrauboxFloatLR {
     color: white;
-	background-color:#333;
-	padding: 5px;
-	margin: 5px;
 	width: 97%;
 	float: left;
 }
@@ -109,8 +112,8 @@ h2 {
 	overflow: hidden;
 }
 .content {
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 8%;
+	margin-right: 8%;
 	margin-bottom: 140px;
     margin-top: 100px;
 }
