@@ -12,15 +12,27 @@ body {
 
 /* links */
 a:link {
-	color: #00FFFF;
+	color: #FFFFFF;
     text-decoration: none;
 }
-a:not(li) {
-	color: #008888;
+a:visited {
+	color: #FFFFFF;
     text-decoration: none;
 }
 a:hover {
-	color: #00BBBB;
+	color: #FFFFFF;
+    text-decoration: none;
+}
+a.link:link {
+	color: #9cf9f9;
+    text-decoration: none;
+}
+a.link:visited {
+	color: #78dcdc;
+    text-decoration: none;
+}
+a.link:hover {
+	color: #00ffff;
     text-decoration: underline;
 }
 
