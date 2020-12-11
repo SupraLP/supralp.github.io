@@ -23,28 +23,53 @@ a:hover {
 	color: #FFFFFF;
     text-decoration: none;
 }
-a.link:link {
-	color: #9cf9f9;
-    text-decoration: none;
-}
-a.link:visited {
-	color: #78dcdc;
-    text-decoration: none;
-}
-a.link:hover {
-	color: #00ffff;
-    text-decoration: underline;
+
+.projectTitle {
+	grid-area: "title";
+	color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+	font-size: 50px;
+    text-shadow: 2px 2px 3px #808080;
 }
 
-.rowcontainer {
-	display: table;
+.projectContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	grid-gap: 10px;
+	padding: 10px;
 }
-.rowcontainer > * {
-	display: table-row;
+
+.projectContainer > div {
+	min-width: 300px;
+	max-width: 300px;
+	height: 400px;
+    color: white;
+    background-color:#222222;
+	border: 0px solid;
+	border-radius: 8px;
+	overflow: hidden;
 }
-.rowcontainer > * > p {
-	margin: 5px;
+
+.projectContainer h3 {
+	margin: 8px 8px 16px 8px;
+	color: #FFFFFF;
 }
+
+.projectContainer p {
+	margin: 8px;
+	color: #DDDDDD;
+}
+
+.projectContainer img {
+	justify-content: flex-end;
+	min-width: 300px;
+	max-width: 300px;
+	border-radius: 0 0 8px 8px;
+	margin: 0;
+}
+
 input, button {
 	background-color: #444444;
 	color: #FFFFFF;
@@ -105,6 +130,8 @@ div.innerLoginBox {
     padding:10px;
     margin:5px;
     border:none;
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 p {
@@ -131,12 +158,6 @@ h2 {
 	font-size: 40px;
 	padding-left: 10px;
 	color: #FF0000;
-}
-.phosphorus-placeholder {
-	width: 482px;
-	height: 400px;
-	background-color: #555555;
-	overflow: hidden;
 }
 .content {
 	margin-left: 8%;
@@ -165,7 +186,17 @@ footer {
     margin-right: 10%;
     float: right;
 }
-.projectContainer > * {
-	min-height: 425px;
-	width: 482px;
+
+
+a.link:link {
+	color: #9cf9f9;
+    text-decoration: none;
+}
+a.link:visited {
+	color: #78dcdc;
+    text-decoration: none;
+}
+a.link:hover {
+	color: #00ffff;
+    text-decoration: underline;
 }
