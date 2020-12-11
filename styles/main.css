@@ -127,8 +127,8 @@ div.innerLoginBox {
 .box {
     color: white;
     background-color:#00000044;
-    padding:10px;
-    margin:5px;
+    padding: 10px;
+    margin: 8px;
     border:none;
 	border-radius: 8px;
 	overflow: hidden;
@@ -153,11 +153,6 @@ p {
     color: white;
 	width: 97%;
 	float: left;
-}
-h2 {
-	font-size: 40px;
-	padding-left: 10px;
-	color: #FF0000;
 }
 .content {
 	margin-left: 8%;
