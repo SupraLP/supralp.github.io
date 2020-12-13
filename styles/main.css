@@ -37,6 +37,7 @@ a:hover {
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	grid-gap: 10px;
+	padding: 10px;
 }
 
 .projectContainer > div {
