@@ -123,7 +123,7 @@
 		</article>
 		<footer>
 			<div class="footerLeft">
-				<p style="margin-top: 40px;">made by Supra © 2011 - 2020</p>
+				<p style="margin-top: 40px;">made by Supra © 2011 - <span id="year">2020</span></p>
 			</div>
 			<div class="footerRight">
 				<ul>
@@ -134,3 +134,6 @@
 		</footer>
 	</body>
 </html>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
